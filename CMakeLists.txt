@@ -3,4 +3,6 @@ project(qoi_fish)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(qoi_fish main.cpp)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -Wall -Wextra -Werror")
+
+add_executable(qoi_fish main.cpp qoi.cpp qoi.h)
